@@ -4,9 +4,9 @@ from typing import Dict
 class Category:
 
     def __init__(self, type: int, description: str, stress_level: int):
-        self.type: int = type
+        self.type: int = int(type)
         self.description: str = description
-        self.stress_level: int = stress_level
+        self.stress_level: int = int(stress_level)
 
     @staticmethod
     def from_json(category_map: Dict):

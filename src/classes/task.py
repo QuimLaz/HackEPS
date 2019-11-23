@@ -9,8 +9,8 @@ class Task:
         self.completed: bool = completed
         self.category: Category = category
         self.report_id: str = report_id
-        self.duration: int = duration
-        self.sla: int = sla
+        self.duration: int = int(duration)
+        self.sla: int = int(sla)
 
     @staticmethod
     def from_json(task_map: Dict):
