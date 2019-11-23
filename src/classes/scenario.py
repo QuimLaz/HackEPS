@@ -8,7 +8,6 @@ class Scenario:
     def __init__(self, scenario_id: str, tasks: List[Task], agent_id: str):
         self.scenario_id: str = scenario_id
         self.tasks: List[Task] = tasks
-        self.uncompleted_tasks = [t for t in self.tasks if not t.completed]
         self.agent_id: str = agent_id
 
     @staticmethod
