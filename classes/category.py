@@ -1,6 +1,6 @@
 class Category:
 
-    def __init__(self, type, description, stress_level):
-        self.type = type
-        self.description = description
-        self.stress_level = stress_level
+    def __init__(self, type: int, description: str, stress_level: int):
+        self.type: int = type
+        self.description: str = description
+        self.stress_level: int = stress_level
