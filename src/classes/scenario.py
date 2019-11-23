@@ -8,6 +8,7 @@ class Scenario:
     def __init__(self, scenario_id: str, tasks: List[Task], agent_id: str):
         self.scenario_id: str = scenario_id
         self.tasks: List[Task] = tasks
+        self.uncompleted_tasks = [t for t in self.tasks if not t.completed]
         self.agent_id: str = agent_id
 
     @staticmethod
@@ -33,3 +34,7 @@ class ScenarioGuess:
             'scenario': self.scenario.to_json(),
             'taskId': self.task_id
         }
+
+    @staticmethod
+    def from_json(scenario_guess_map: Dict):
+        return ScenarioGuess(Scenario.from_json(scenario_guess_map['scenario']), scenario_guess_map['taskId'])
