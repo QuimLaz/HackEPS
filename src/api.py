@@ -20,6 +20,7 @@ class API:
 
     @classmethod
     def get_scenario(cls, id: int) -> Scenario:
+        id = id if 0 < id < 4 else 2
         response = requests.get(url=f'{cls.scenario_url}/{id}{cls.team_key}')
         scenario_map = response.json()['value']
         return Scenario.from_json(scenario_map)
