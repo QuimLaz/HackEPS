@@ -560,4 +560,4 @@ MigrationBackup/
 # End of https://www.gitignore.io/api/python,pycharm,visualstudio,visualstudiocode
 
 */sandbox.py
-src/*.json
+data

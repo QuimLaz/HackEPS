@@ -84,7 +84,7 @@ class API:
 
     @classmethod
     def get_dataset(cls) -> List[ScenarioGuess]:
-        f = open('solutions.json', 'r', encoding='utf8')
+        f = open('../data/solutions.json', 'r', encoding='utf8')
         s = f.read()
         sgs: List[Dict] = json.loads(s)
         sgs: List[ScenarioGuess] = [ScenarioGuess.from_json(s) for s in sgs]
