@@ -1,6 +1,6 @@
 from typing import List
 
-from classes.task import Task
+from src.classes.task import Task
 
 
 class Scenario:

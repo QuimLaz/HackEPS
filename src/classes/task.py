@@ -1,4 +1,4 @@
-from classes.category import Category
+from src.classes.category import Category
 
 
 class Task:
