@@ -16,7 +16,7 @@ def compair_two_descriptions(descr1, descr2):
     vectorizer = TfidfVectorizer(stop_words='english', min_df=3)
     descr1_values = vectorizer.fit_transform(descr1)
     descr2_values = vectorizer.fit_transform(descr2)
-    if (sum(descr1_values) > sum(descr2_values)):
+    if sum(descr1_values) > sum(descr2_values):
         return sum(descr1_values)
     else:
         return sum(descr2_values)
