@@ -9,7 +9,7 @@ from src.classes.scenario import Scenario, ScenarioGuess
 
 
 class API:
-    api_key = 'mamamiodqm'
+    api_key = 'lmao'
     base_url = 'http://18.184.40.57:9010'
     scenario_url = f'{base_url}/scenario'
     evaluation_url = f'{base_url}/evaluation'

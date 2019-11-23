@@ -1,3 +1,4 @@
+import copy
 import numpy as np
 from scipy.optimize import minimize
 
@@ -8,7 +9,7 @@ def objective_function_full(parameters: np.array, model, solution):
         if task != solution:
             if model.comparison_function(parameters, task, solution) == solution:
                 count += 1
-    return -count + model.weight*parameters.squared().sum()
+    return -count + model.weight*np.square(parameters).sum()
 
 
 class Selector:
@@ -38,7 +39,7 @@ class Selector:
         return scenario.tasks[count.index(max(count))]
 
     def update_params(self, new_params):
-        self.comparison_parameters = [old+self.learning_rate*new for old, new in
+        self.comparison_parameters = [old + self.learning_rate*new for old, new in
                                       zip(self.comparison_parameters, new_params)]
 
     def compute_new_params(self, solution_id):
@@ -50,5 +51,6 @@ class Selector:
         def objective_function(parameters):
             return objective_function_full(parameters, self, solution)
 
-        return minimize(objective_function, np.array(self.comparison_parameters))
-
+        result_opt = minimize(objective_function, np.array(self.comparison_parameters))
+        new_params = copy.deepcopy(result_opt['x'])
+        return new_params
