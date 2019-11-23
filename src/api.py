@@ -14,6 +14,10 @@ class API:
     evaluation_url = f'{base_url}/evaluation'
     team_key = f'?teamKey={api_key}'
 
+    def __init__(self) -> None:
+        # Make API class non-instantiable
+        raise Exception('API cannot be instantiated')
+
     @classmethod
     def get_scenario(cls, id: int) -> Scenario:
         response = requests.get(url=f'{cls.scenario_url}/{id}{cls.team_key}')
@@ -39,10 +43,3 @@ class API:
         response = requests.post(url=f'{cls.evaluation_url}{cls.team_key}', data=json.dumps(evaluations.to_json()),
                                  headers={'Content-type': 'application/json', 'Accept': 'application/json'})
         return response.json()['value']
-
-
-if __name__ == '__main__':
-    scs = API.get_evaluation()
-    ev = Evaluations([Evaluation(s.scenario_id, s.tasks[2].id) for s in scs])
-    score = API.post_evaluation(ev)
-    print(score)
