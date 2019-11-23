@@ -1,9 +1,9 @@
+import json
 from typing import Tuple, List
 
 import requests
-import json
 
-from src.classes.evaluation import Evaluations, Evaluation
+from src.classes.evaluation import Evaluations
 from src.classes.scenario import Scenario, ScenarioGuess
 
 

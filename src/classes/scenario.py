@@ -12,7 +12,8 @@ class Scenario:
 
     @staticmethod
     def from_json(scenario_map: Dict):
-        return Scenario(scenario_map['scenarioId'], [Task.from_json(tj) for tj in scenario_map['tasks']], scenario_map['agentId'])
+        return Scenario(scenario_map['scenarioId'], [Task.from_json(tj) for tj in scenario_map['tasks']],
+                        scenario_map['agentId'])
 
     def to_json(self):
         return {
