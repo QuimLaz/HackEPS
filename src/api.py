@@ -28,10 +28,10 @@ class API:
         return Scenario.from_json(scenario_map)
 
     @classmethod
-    def get_scenario_guess_from_dataset(cls) -> ScenarioGuess:
+    def get_scenario_guess_from_dataset(cls, i) -> ScenarioGuess:
         if cls.dataset is None:
             cls.dataset = cls.get_dataset()
-        return cls.dataset[random.randrange(0, len(cls.dataset))]
+        return cls.dataset[i % len(cls.dataset)]
 
     @classmethod
     def post_scenario(cls, scenario_guess: ScenarioGuess) -> Tuple[bool, str]:
