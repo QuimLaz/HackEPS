@@ -1,6 +1,6 @@
-from src.classes.task import Task
-from sklearn.metrics import mean_squared_error
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+from src.classes.task import Task
 
 
 def importance(parameters, task: Task):

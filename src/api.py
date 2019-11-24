@@ -31,6 +31,7 @@ class API:
     def get_scenario_guess_from_dataset(cls, i) -> ScenarioGuess:
         if cls.dataset is None:
             cls.dataset = cls.get_dataset()
+            print(len(cls.dataset))
         return cls.dataset[i % len(cls.dataset)]
 
     @classmethod
@@ -85,7 +86,9 @@ class API:
     @classmethod
     def get_dataset(cls) -> List[ScenarioGuess]:
         sgs: List[ScenarioGuess] = []
-        f = open(f'../data/api-backup1.json', 'r', encoding='utf8')
+        f = open(f'../data/api-backup2.json', 'r', encoding='utf8')
         sgs += [ScenarioGuess.from_json(s) for s in json.loads(f.read())['assignations']]
+        #f = open('../data/small3.json', 'r', encoding='utf8')
+        #sgs += [ScenarioGuess.from_json(s) for s in json.loads(f.read())]
         f.close()
         return sgs
