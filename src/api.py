@@ -4,6 +4,7 @@ from typing import Tuple, List
 
 import requests
 
+from main import select_next_task
 from src.classes.evaluation import Evaluations, Evaluation
 from src.classes.scenario import Scenario, ScenarioGuess
 
@@ -59,7 +60,7 @@ class API:
         ev = Evaluations([
             Evaluation(
                 scenario.scenario_id,
-                scenario.uncompleted_tasks[random.randrange(0, len(scenario.uncompleted_tasks))].id
+                select_next_task(scenario).id
             ) for scenario in scs])
         return cls.post_evaluation(ev)
 
