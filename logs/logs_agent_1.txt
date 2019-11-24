@@ -1,0 +1,100 @@
+Iterations: 0
+Accuracy (overall): 0.00%
+Accuracy (last): 0.00%
+--------------------
+Iterations: 100
+Accuracy (overall): 12.87%
+Accuracy (last): 13.00%
+--------------------
+Iterations: 200
+Accuracy (overall): 10.95%
+Accuracy (last): 9.00%
+--------------------
+Iterations: 300
+Accuracy (overall): 10.30%
+Accuracy (last): 9.00%
+--------------------
+Iterations: 400
+Accuracy (overall): 11.22%
+Accuracy (last): 14.00%
+--------------------
+Iterations: 500
+Accuracy (overall): 10.58%
+Accuracy (last): 8.00%
+--------------------
+Iterations: 600
+Accuracy (overall): 10.32%
+Accuracy (last): 9.00%
+--------------------
+Iterations: 700
+Accuracy (overall): 10.70%
+Accuracy (last): 13.00%
+--------------------
+Iterations: 800
+Accuracy (overall): 10.99%
+Accuracy (last): 13.00%
+--------------------
+Iterations: 900
+Accuracy (overall): 11.21%
+Accuracy (last): 13.00%
+--------------------
+Iterations: 1000
+Accuracy (overall): 11.09%
+Accuracy (last): 10.00%
+--------------------
+Iterations: 1100
+Accuracy (overall): 10.81%
+Accuracy (last): 8.00%
+--------------------
+Iterations: 1200
+Accuracy (overall): 10.91%
+Accuracy (last): 12.00%
+--------------------
+Iterations: 1300
+Accuracy (overall): 10.84%
+Accuracy (last): 10.00%
+--------------------
+Iterations: 1400
+Accuracy (overall): 10.85%
+Accuracy (last): 11.00%
+--------------------
+Iterations: 1500
+Accuracy (overall): 11.26%
+Accuracy (last): 17.00%
+--------------------
+Iterations: 1600
+Accuracy (overall): 10.87%
+Accuracy (last): 5.00%
+--------------------
+Iterations: 1700
+Accuracy (overall): 11.29%
+Accuracy (last): 18.00%
+--------------------
+Iterations: 1800
+Accuracy (overall): 11.22%
+Accuracy (last): 10.00%
+--------------------
+Iterations: 1900
+Accuracy (overall): 11.31%
+Accuracy (last): 13.00%
+--------------------
+Iterations: 2000
+Accuracy (overall): 11.09%
+Accuracy (last): 7.00%
+--------------------
+Iterations: 2100
+Accuracy (overall): 11.09%
+Accuracy (last): 11.00%
+--------------------
+Iterations: 2200
+Accuracy (overall): 11.36%
+Accuracy (last): 17.00%
+--------------------
+Iterations: 2300
+Accuracy (overall): 11.60%
+Accuracy (last): 17.00%
+--------------------
+Iterations: 2400
+Accuracy (overall): 11.54%
+Accuracy (last): 10.00%
+--------------------
