@@ -1,6 +1,6 @@
 import json
 import random
-from typing import Tuple, List, Dict
+from typing import Tuple, List
 
 import requests
 
@@ -84,9 +84,8 @@ class API:
 
     @classmethod
     def get_dataset(cls) -> List[ScenarioGuess]:
-        f = open('../data/solutions.json', 'r', encoding='utf8')
-        s = f.read()
-        sgs: List[Dict] = json.loads(s)
-        sgs: List[ScenarioGuess] = [ScenarioGuess.from_json(s) for s in sgs]
+        sgs: List[ScenarioGuess] = []
+        f = open(f'../data/api-backup1.json', 'r', encoding='utf8')
+        sgs += [ScenarioGuess.from_json(s) for s in json.loads(f.read())['assignations']]
         f.close()
         return sgs

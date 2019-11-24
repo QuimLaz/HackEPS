@@ -37,4 +37,4 @@ class ScenarioGuess:
 
     @staticmethod
     def from_json(scenario_guess_map: Dict):
-        return ScenarioGuess(Scenario.from_json(scenario_guess_map['scenario']), scenario_guess_map['taskId'])
+        return ScenarioGuess(Scenario.from_json(scenario_guess_map['scenario']), scenario_guess_map['task']['id'])
