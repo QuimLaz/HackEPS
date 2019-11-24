@@ -4,8 +4,16 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 def importance(parameters, task: Task):
-    return parameters[0] * task.duration + parameters[1] * task.sla + \
-           parameters[2] * task.category.stress_level
+    # there are only 2 types of tasks
+    type_weight = parameters[0] if task.category.type == 0 else parameters[1]
+    if task.category.stress_level == 1:
+        stress_level_weight = parameters[2]
+    elif task.category.stress_level == 2:
+        stress_level_weight = parameters[3]
+    elif task.category.stress_level == 3:
+        stress_level_weight = parameters[4]
+    return parameters[5] * task.duration + parameters[6] * task.sla + \
+           parameters[7] * task.category.stress_level + type_weight + stress_level_weight
 
 
 def comparison_using_importance(parameters, task1: Task, task2: Task):
