@@ -1,0 +1,100 @@
+Iterations: 0
+Accuracy (overall): 0.00%
+Accuracy (last): 0.00%
+--------------------
+Iterations: 100
+Accuracy (overall): 9.90%
+Accuracy (last): 10.00%
+--------------------
+Iterations: 200
+Accuracy (overall): 7.96%
+Accuracy (last): 6.00%
+--------------------
+Iterations: 300
+Accuracy (overall): 6.64%
+Accuracy (last): 4.00%
+--------------------
+Iterations: 400
+Accuracy (overall): 7.73%
+Accuracy (last): 11.00%
+--------------------
+Iterations: 500
+Accuracy (overall): 8.18%
+Accuracy (last): 10.00%
+--------------------
+Iterations: 600
+Accuracy (overall): 8.65%
+Accuracy (last): 11.00%
+--------------------
+Iterations: 700
+Accuracy (overall): 8.70%
+Accuracy (last): 9.00%
+--------------------
+Iterations: 800
+Accuracy (overall): 8.74%
+Accuracy (last): 9.00%
+--------------------
+Iterations: 900
+Accuracy (overall): 8.66%
+Accuracy (last): 8.00%
+--------------------
+Iterations: 1000
+Accuracy (overall): 8.79%
+Accuracy (last): 10.00%
+--------------------
+Iterations: 1100
+Accuracy (overall): 8.99%
+Accuracy (last): 11.00%
+--------------------
+Iterations: 1200
+Accuracy (overall): 9.08%
+Accuracy (last): 10.00%
+--------------------
+Iterations: 1300
+Accuracy (overall): 9.07%
+Accuracy (last): 9.00%
+--------------------
+Iterations: 1400
+Accuracy (overall): 9.06%
+Accuracy (last): 9.00%
+--------------------
+Iterations: 1500
+Accuracy (overall): 9.66%
+Accuracy (last): 18.00%
+--------------------
+Iterations: 1600
+Accuracy (overall): 9.87%
+Accuracy (last): 13.00%
+--------------------
+Iterations: 1700
+Accuracy (overall): 9.99%
+Accuracy (last): 12.00%
+--------------------
+Iterations: 1800
+Accuracy (overall): 10.05%
+Accuracy (last): 11.00%
+--------------------
+Iterations: 1900
+Accuracy (overall): 10.36%
+Accuracy (last): 16.00%
+--------------------
+Iterations: 2000
+Accuracy (overall): 10.29%
+Accuracy (last): 9.00%
+--------------------
+Iterations: 2100
+Accuracy (overall): 10.28%
+Accuracy (last): 10.00%
+--------------------
+Iterations: 2200
+Accuracy (overall): 10.04%
+Accuracy (last): 5.00%
+--------------------
+Iterations: 2300
+Accuracy (overall): 10.26%
+Accuracy (last): 15.00%
+--------------------
+Iterations: 2400
+Accuracy (overall): 10.41%
+Accuracy (last): 14.00%
+--------------------

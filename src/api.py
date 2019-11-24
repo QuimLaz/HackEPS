@@ -28,10 +28,9 @@ class API:
         return Scenario.from_json(scenario_map)
 
     @classmethod
-    def get_scenario_guess_from_dataset(cls, i) -> ScenarioGuess:
+    def get_scenario_guess_from_dataset(cls, i, agent_id) -> ScenarioGuess:
         if cls.dataset is None:
-            cls.dataset = cls.get_dataset()
-            print(len(cls.dataset))
+            cls.dataset = cls.get_dataset(agent_id)
         return cls.dataset[i % len(cls.dataset)]
 
     @classmethod
@@ -84,11 +83,15 @@ class API:
                 f.close()
 
     @classmethod
-    def get_dataset(cls) -> List[ScenarioGuess]:
+    def get_dataset(cls, agent_id) -> List[ScenarioGuess]:
         sgs: List[ScenarioGuess] = []
-        f = open(f'../data/api-backup2.json', 'r', encoding='utf8')
+        f = open(f'../data/api-backup{agent_id}.json', 'r', encoding='utf8')
         sgs += [ScenarioGuess.from_json(s) for s in json.loads(f.read())['assignations']]
         #f = open('../data/small3.json', 'r', encoding='utf8')
         #sgs += [ScenarioGuess.from_json(s) for s in json.loads(f.read())]
         f.close()
         return sgs
+
+    @classmethod
+    def remove_dataset(cls):
+        cls.dataset = None
